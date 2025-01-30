@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import necessary components
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './home';
 import Quiz from './Quiz';
 import './style.css';
 
 function App() {
   return (
-    <Router basename="https://bharanishree05.github.io/QuizApp">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quiz" element={<Quiz />} />
