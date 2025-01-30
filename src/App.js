@@ -6,7 +6,7 @@ import './style.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="https://bharanishree05.github.io/QuizApp">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quiz" element={<Quiz />} />
